@@ -1,0 +1,10 @@
+# basic options
+  title: My first website title
+  author: Ho Lun Chow
+  email: fredunit2007@gmail.com
+  description: ho lun site
+  github_username: fredunit
+  
+# Build settings
+markdown: kramdown
+theme: minima
