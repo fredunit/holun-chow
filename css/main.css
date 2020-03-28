@@ -3,6 +3,10 @@ display: inline-flex;
 list-style-type: none;
 }
 
+nav {
+  text-align: center;
+}
+
 li {
   margin-right: 5px;
 }
