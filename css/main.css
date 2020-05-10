@@ -1,6 +1,7 @@
 ul {
 display: inline-flex;
-list-style-type: none;
+justify-content: space-between;
+width: 5%;
 }
 
 nav {
@@ -9,6 +10,7 @@ nav {
 
 li {
   margin-right: 10px;
+  list-style-type: none;
 }
 
 h1, h2 {
