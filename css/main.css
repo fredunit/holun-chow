@@ -29,10 +29,6 @@ float: right;
   height: 60px;
 }
 
-li {
-  list-style-type: none;
-}
-
 a:link {
   text-decoration: none;
   color: inherit;
@@ -56,8 +52,6 @@ h1, h2 {
   height: 400px;
   align-items: center;
 }
-
-
 
 hr {
   border-radius: 10px;
