@@ -10,19 +10,17 @@
 
 </head>
 <body>
-  <div id = "cookiesmessage" lang="en">
-    <div><p id= "message">We are using the cookies.</p></div>
-    <div></div>
-    <div></div>
-  </div>
+  
   <div class="navbar">
     <div class="items">
       <a href="about">About</a>
-      <label for="CV">CV</label>
-      <select name="CV" id="CV">
-      <option selected="selected" value="eng.html">English</option>
+      <div id="selectbox">
+      <select onchange="window.location.href=this.value" name="cv" id="cv">
+      <option selected="selected">CV:</option>
+      <option value="eng.html">English</option>
       <option value="de.html">Deutsch</option>
     </select>
+  </div>
       <a href="contact">Contact</a>
       <a href="portfolio">Portfolio</a>
       <a href="hire me">Hire</a>
@@ -36,7 +34,8 @@
   <footer> created by HoLun Chow
   
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="index.js"></script>
+  <script src="anchortoselect.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
