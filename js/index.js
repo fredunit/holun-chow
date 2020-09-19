@@ -7,7 +7,7 @@ function time(){
 hour = updateTime(hour);
 minute = updateTime(minute);
 second = updateTime(second);
-document.getElementsById("#clock").innerText = hour + ":" + minute + ":" + second;
+document.getElementsById("clock").innerText = hour + ":" + minute + ":" + second;
 
 let display = setTimeout(function () {
  time() }, 1000);
