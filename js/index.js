@@ -4,22 +4,15 @@ function time(){
     let minute = now.getMinutes();
     let second = now.getSeconds();
 
-hour = updateTime(hour);
-minute = updateTime(minute);
-second = updateTime(second);
-document.getElementsById("clock").innerText = hour + ":" + minute + ":" + second;
+hour = (hour < 10)? "0" + hour : hour;
+minute = (minute < 10)? "0" + minute : minute;
+second = (second < 10)? "0" + second : second;
 
-let display = setTimeout(function () {
- time() }, 1000);
-}
-
-function updateTime(value) {
-  if (value < 10) {
-    return "0" + value;
-} else {
-  return value;
-}
+let display = hour + ":" + minute + ":" + second;
+document.getElementById("clock").innerText = display;
+document.getElementById("clock").textContent = display;
 }
 
 time();
+setInterval(time, 1000);
 
